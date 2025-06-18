@@ -57,7 +57,7 @@ const Resume = () => {
             Download my complete resume or explore my experience below
           </p>
           <a
-          href="/DILLIGANESH_RESUME.pdf"
+          href="/Portfolio/DILLIGANESH_RESUME.pdf"
           download
           className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 mx-auto"
           >
