@@ -67,16 +67,17 @@ const VideoPlayer: React.FC = () => {
       <div className="relative bg-gradient-to-br from-cyan-500/20 to-purple-500/20 p-1 rounded-2xl backdrop-blur-sm border border-white/10 shadow-2xl shadow-cyan-500/10">
         <div className="relative overflow-hidden rounded-xl aspect-[9/16] w-80 bg-black">
           <video
-            ref={videoRef}
-            className="w-full h-full object-cover"
-            onTimeUpdate={handleTimeUpdate}
-            onLoadedMetadata={handleLoadedMetadata}
-            onEnded={() => setIsPlaying(false)}
-            poster=""
-          >
-            <source src="/Portfolio/Me.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+  ref={videoRef}
+  className="w-full h-full object-cover"
+  onTimeUpdate={handleTimeUpdate}
+  onLoadedMetadata={handleLoadedMetadata}
+  onEnded={() => setIsPlaying(false)}
+  poster=""
+>
+  <source src={`${import.meta.env.BASE_URL}Me.mp4`} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
           
           {/* Play button overlay */}
           {!isPlaying && (
